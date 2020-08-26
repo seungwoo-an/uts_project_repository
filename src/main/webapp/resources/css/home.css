@@ -1,0 +1,349 @@
+@charset "UTF-8";
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+#header {
+	display: none;
+}
+
+#header>div:nth-child(1){
+	opacity: 0;
+}
+
+::-webkit-scrollbar {
+	display: none !important;
+}
+
+#footer{
+	display: none;
+	opacity:0;
+}
+
+#main_home {
+	background-color:#2a365c;
+	position: absolute;
+	width: 1920px;
+	height: 937px;
+	overflow: hidden;
+}
+
+#main_menu {
+	position: absolute;
+	top: 937px;
+	left: 50%;
+	transform: translate(-50%);
+	width: 1520px;
+	height: 0px;
+	overflow: hidden;
+}
+
+#main_home>img {
+	position: absolute;
+	top: 100px;
+	left: 83px;
+	width: 200px;
+	height: 200px;
+	background: none;
+}
+
+#main_home>ul {
+	position: absolute;
+	top: 350px;
+	left: 82px;
+	text-align: center;
+	width: 200px;
+	height: 420px;
+}
+
+#main_home>ul>li {
+	margin: 40px 0;
+	height: 30px;
+}
+
+#main_home>ul>li>a {
+	color: white;
+	font-size: 24px;
+}
+
+#main_home>ul>li>a:hover {
+	color: yellow;
+	font-size: 26px;
+}
+
+#main_home>video {
+	position: absolute;
+	width: 80%;
+	top: 50%;
+	left: 350px;
+	transform: translate(0, -50%)
+}
+
+/* 클릭시 나오는 화면 */
+.section_commonse {
+	overflow: hidden;
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	top: 15px;
+	left: 330px;
+	background-color: rgba(42, 54, 92, 0.7);
+	box-shadow: 10px 20px 30px #000000;
+	z-index: 2;
+	border: none;
+}
+
+#exit {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	cursor: pointer;
+	right: 10px;
+	top: 10px;
+}
+
+#exit_span1 {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	border-radius: 30px;
+	background: white;
+	transition: all .35s;
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+}
+
+#exit_span2 {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	border-radius: 30px;
+	background: white;
+	transition: all .35s;
+	top: 50%;
+	transform: translateY(-50%) rotate(-45deg);
+}
+
+
+/*=========================================================================================*/
+/*=========================================================================================*/
+/*=========================================================================================*/
+
+/* next css */
+#next {
+	width: 50px;
+	height: 60px;
+	position: absolute;
+	cursor: pointer;
+	display: inline-block;
+	top:750px;
+	left: 155px;
+	overflow: hidden;
+}
+
+#next:hover .next_span:nth-child(n+2):nth-child(-n+3) {
+	animation-duration: 3s;
+	animation-name: span_down1;
+	animation-fill-mode: forwards;
+}
+
+#next:hover .next_span:nth-child(n+4):nth-child(-n+5) {
+	animation-duration: 3s;
+	animation-name: span_down2;
+	animation-fill-mode: forwards;
+}
+
+#next:hover .next_span:nth-child(n+6):nth-child(-n+7) {
+	animation-duration: 3s;
+	animation-name: span_down3;
+	animation-fill-mode: forwards;
+}
+
+#next:hover #next_page {
+	animation-duration: 3s;
+	animation-name: text_show;
+	animation-fill-mode: forwards;
+}
+
+.next_span {
+	display: block;
+	position: absolute;
+	border-radius: 10px;
+	background: white;
+	transition: all .35s;
+	width: 60%;
+	height: 4px;
+}
+
+#next_page {
+	top: -25px;
+	left: 1px;
+	display: block;
+	position: absolute;
+	color: white;
+	font-size: 20px;
+	transition: all .35s;
+	width: 60.5%;
+	height: 5px;
+}
+
+@keyframes span_down1 {
+	from { top:40%;}
+	to {top: 150%;}
+}
+@keyframes span_down2 {
+	from { top:60%; }
+	to {top: 160%;}
+}
+@keyframes span_down3 {
+	from { top:80%; }
+	to {top: 180%;}
+
+}
+@keyframes text_show {
+	from { top:-25px; }
+	to {top: 35%;}
+}
+
+#next_span1 {
+	top: 40%;
+	left: 0;
+	transform: translateY(-50%) rotate(40deg);
+}
+
+#next_span2 {
+	top: 40%;
+	right: 0;
+	transform: translateY(-50%) rotate(-40deg);
+}
+
+#next_span3 {
+	top: 60%;
+	left: 0;
+	transform: translateY(-50%) rotate(40deg);
+}
+
+#next_span4 {
+	top: 60%;
+	right: 0;
+	transform: translateY(-50%) rotate(-40deg);
+}
+
+#next_span5 {
+	top: 80%;
+	left: 0;
+	transform: translateY(-50%) rotate(40deg);
+}
+
+#next_span6 {
+	top: 80%;
+	right: 0;
+	transform: translateY(-50%) rotate(-40deg);
+}
+
+/*=========================================================================================*/
+/*=========================================================================================*/
+/*=========================================================================================*/
+#home_main_section{
+	margin-top:50px;
+	display:none;
+	width: 100%;
+	height: 100%;
+	flex-direction : column;
+	align-items: center;
+	opacity: 0;
+}
+
+#home_div_one{
+	display:flex;
+	width: 100%;
+	height: 370px;
+	flex-direction : column;
+	align-items: center;
+/* 	border: 1px solid #2a365c; */
+/* 	border-left: none; */
+/* 	border-right: none; */
+}
+
+#home_div_one div:nth-child(1){
+	display:flex;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#home_div_one>div:nth-child(1) img {
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+#home_div_one>div:nth-child(1)>img:nth-child(1){
+	opacity:1; 
+}
+
+#home_div_two{
+	margin-top: 100px;
+	display:flex;
+	position: relative;
+	width: 1400px;
+/* 	height: 100%; */
+/* 	border: 1px solid red; */
+/* 	background-color: pink; */
+}
+.product_list_frame{
+	display: flex;
+	justify-content: center;
+}
+.new_product_list{
+	height: 650px;
+	width: 100%;
+/* 	background-color: gray;	 */
+	margin-bottom: 120px;
+}
+.div_product_list{
+	display:flex;
+	justify-content:center;
+	width: 1300px;
+}
+
+.new_product_tit{
+	font-weight: 700;
+	color: #333;
+	font-size: 33px;
+    line-height: 32px;
+    letter-spacing: -0.3px;
+    text-align: center;
+	padding-bottom:20px; 
+}
+
+.new_product_sub_tit{
+	display: inline-block;
+	margin: 0 17px;
+}
+
+fieldset {
+	border: 1px solid #443a30;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	padding: 20px;
+}
+
+legend {
+	text-align: center;
+	color: #333;
+	font-size: 18px;
+}
+
+#screen_check{
+	position:absolute;
+	color: white;
+	top:850px;
+	left: 120px;
+}

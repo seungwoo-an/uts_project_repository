@@ -1,0 +1,467 @@
+@charset "UTF-8";
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+#memberlist_menu_div{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+#memberlist_menubar {
+	position:relative;
+	display: flex;
+	flex-direction:column;
+	margin-top: 10px;
+	width: 100%;
+	height: 80px;
+	max-width: 1400px;
+	min-width: 1400px;
+	border-bottom: 1px solid #2a365c;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+#memberlist_menubar ul {
+	display: flex;
+	width: 50%;
+	height: 100%;
+}
+
+#memberlist_menubar>ul li {
+	width: 50%;
+}
+
+#memberlist_menubar>ul>li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	background-color: azure;
+	color: #2a365c;
+}
+
+#memberlist_menubar>ul>li a.on {
+	background-color: rgba(42, 54, 92, 0.9);
+	color: white;
+}
+
+#memberlist_menubar span{
+	position:absolute;
+	border: 1px solid;
+	border-radius:50px;
+	width:5px;
+	width: 130px;
+	height:5px;
+	background-color: azure;
+	bottom: 10px;
+	left:110px;
+}
+
+
+
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+
+#loding {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 199;
+}
+
+#loding>div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100px;
+	height: 100px;
+	border: 15px solid white;
+	border-top: 15px solid #2a365c;
+	border-radius: 50%;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	from {transform:translate(-50%, -50%)rotate(0deg);}
+	to {transform: translate(-50%, -50%) rotate(360deg);}
+}
+
+/*=============================================*/
+/*=============================================*/
+/*=============================================*/
+
+#memberlist_div input[type=button] , label , input[type=radio]  ,#memberlist_table_div input[type=button] , #memberinfo_div input[type=button]{
+	cursor: pointer;
+	outline: none;
+}
+
+
+#memberlist_div {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+#memberlist_table_div{
+	display:flex;
+	justify-content:center;
+	width: 100%;
+}
+#memberlist_table_div>div:nth-child(1){
+	width: 100%;
+	max-width: 1400px;
+	min-width: 1400px;
+}
+
+#memberlist_div>div:nth-child(1) {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 100%;
+	max-width: 1400px;
+	min-width: 1400px;
+	border-bottom: 1px solid #2a365c;
+}
+
+#memberlist_div h2 {
+	display: flex;
+	font-size: 25px;
+	height: 60px;
+	align-items: center;
+	border-bottom: 1px solid #2a365c;
+	padding-left: 20px;
+}
+
+#member_option_div {
+	width: 100%;
+}
+
+#member_option_div>table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#member_option_div>table tr:nth-child(n+1) {
+	height: 80px;
+}
+
+#member_option_div>table td:nth-child(n+1) {
+	border-right: 1px solid #2a365c;
+	border-bottom: 1px solid #2a365c;
+	padding: 20px;
+}
+
+#member_option_div>table td:nth-child(odd) {
+	color: white;
+	width: 20%;
+	background-color: rgba(42, 54, 92, 0.8);
+}
+
+#member_option_div>table td:nth-child(even) {
+	background-color: azure;
+	width: 30%;
+}
+
+#member_option_div>table select {
+	width: 100px;
+	height: 35px;
+}
+
+#member_option_div>table input[type=text] {
+	height: 33px;
+	width: 250px;
+	font-size: 15px;
+}
+
+#member_option_div>table input[type=radio] {
+	width: 15px;
+	height: 15px;
+}
+
+#member_option_div>table label {
+	margin-right: 20px;
+	font-size: 17px;
+}
+
+#member_option_div>div:last-child {
+	display: flex;
+	justify-content: center;
+}
+
+#member_option_div input[type=button] {
+	width: 200px;
+	height: 50px;
+	border: 2px solid #2a365c;
+	background-color: white;
+	margin: 30px 0 40px 0;
+	font-size: 20px;
+	border-radius: 20px;
+}
+
+#member_option_div input[type=button]:hover {
+	background-color: #2a365c;
+	color: white;
+}
+
+#member_LV{
+	display:inline;
+	color: silver;
+	font-size: 20px;
+	border: 2px solid silver; 
+	vertical-align: middle;
+	padding: 0 5px 0 5px;
+	margin-right: 10px
+}
+
+/*================================================================*/
+/*================================================================*/
+/*================================================================*/
+
+#memberlist_div>div:nth-child(2) {
+	display: flex;
+	width: 100%;
+	min-width: 1400px;
+	max-width: 1400px;
+	/* padding-top: 40px; */
+	/* background-color: aqua; */
+}
+
+#member_table_div {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+#member_table_div tr>th:nth-child(2) {
+	width: 50px;
+}
+#member_table_div tr>th:nth-child(5) {
+	width: 250px;
+}
+#member_table_div tr>th:nth-child(6) {
+	width: 50px;
+}
+
+#member_table_div>div:first-child {
+	padding: 40px 0 20px 0;
+}
+
+#member_table_div>div:nth-child(2) {
+	padding: 20px 0 20px 0;
+}
+
+#member_table_div div:first-child>input[type=button]{
+	width: 100px;
+	height: 40px;
+	margin-right: 20px;
+	border: 2px solid #2a365c;
+	background-color: white;
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+#member_table_div div:first-child>input[type=button]:hover{
+	background-color: #2a365c;
+	color:white;
+}
+#member_table_div div:nth-child(2) input[type=button] ,#memberinfo_div input[type=button]{
+	width: 70px;
+	height: 30px;
+	border: 2px solid #2a365c;
+	background-color: white;
+	font-size: 15px;
+	border-radius: 10px;
+}
+
+#member_table_div div:nth-child(2) input[type=button]:hover ,#memberinfo_div input[type=button]:hover{
+	background-color: #2a365c;
+	color:white;
+}
+
+#member_table_div table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: azure;
+}
+
+#member_table_div tr:nth-child(1) {
+	font-size: 20px;
+}
+#member_table_div tr:nth-child(n+1) {
+	height: 70px;
+}
+
+#member_table_div tr:first-child , #member_table_div tr:last-child{
+	color: white;
+	background-color: rgba(42, 54, 92, 0.8);
+}
+
+#member_table_div th:nth-child(n+1) {
+	width: 60px;
+	border-bottom: 1px solid #2a365c;
+	border-top: 1px solid #2a365c;
+}
+
+#member_table_div th:first-child {
+	width: 50px;
+}
+#member_table_div th:last-child {
+	width: 100px;
+}
+
+#member_table_div th:last-child div {
+	display:flex;
+	margin: 0 auto;
+	justify-content:center;
+}
+
+
+/*================================================================*/
+/*================================================================*/
+/*================================================================*/
+
+
+.paging_span , #first , #back , #next , #last{
+	display:flex;
+	justify-content:center;
+	background-color:azure;
+	flex-direction:column;
+	width:40px;
+	height : 40px;
+	border:1px solid #2a365c;
+	margin: 5px;
+	color:black;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+
+.paging_span:hover , #first:hover , #back:hover , #next:hover , #last:hover{
+	background-color:#000000;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+/*================================================================*/
+/*================================================================*/
+/*================================================================*/
+
+
+button[type="button"]:focus{outline: none;} /* 
+
+/* ================================== Chan : 체스박스 CSS START */
+
+.checkbox{
+	margin-left: 10px;
+	padding-top: 5px;
+/* 	width: 30px; */
+	height: 30px;
+	
+}
+.checkbox input {
+	display: none;
+}
+
+.checkbox span {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.text{
+	width: 100%;
+}
+.checkbox .icon {
+	position: relative;
+	width: 17px;
+	height: 17px;
+	border: 1px solid #c8ccd4;
+	border-radius: 3px;
+	transition: background 0.1s ease;
+	background-color: white;
+}
+
+.checkbox .icon::after {
+ 	content:''; 
+	position: absolute;
+	top: 1px;
+	left: 5px;
+	width: 5px;
+	height: 11px;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	transform:rotate(45) scale(0);
+	transition: all 0.3s ease;
+}
+
+.checkbox .text {
+	margin-left: 5px;
+	width: 30px;
+	font-weight: bold;
+}
+
+.checkbox input:checked ~ .icon {
+	border-color: transparent;
+	background: #0066cc;
+	animation: jelly 0.6s ease;
+}
+.checkbox input:checked ~ .icon::after {
+	opacity:1;
+	transform:rotate(45deg) scale(1);
+}
+
+@keyframes jelly{
+	from {transform: scale(1,1);}
+	30% {transform: scale(1.25,0.75);}
+	40% {transform: scale(0.75,1.25);}
+	50% {transform: scale(1.15,0.85);}
+	65% {transform: scale(0.95,1.05);}
+	75% {transform: scale(1.05,0.95);}
+	to {transform: scale(1,1);}
+}
+
+/*=====================================================================*/
+/*=====================================================================*/
+/* 					회원 상세 정보  */
+/*=====================================================================*/
+/*=====================================================================*/
+
+#memberinfo_div>div:nth-child(1) {
+    width: 100%;
+    max-width: 1400px;
+    min-width: 1400px;
+}
+
+#memberinfo_div{
+	display: flex;
+	justify-content: center;
+}
+
+#memberinfo_div tr>th:nth-child(1) {
+	width: 50px;
+}
+#memberinfo_div tr>th:nth-child(4) {
+	width: 250px;
+}
+#memberinfo_div tr>th:nth-child(5) {
+	width: 50px;
+}
+
+

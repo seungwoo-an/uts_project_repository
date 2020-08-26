@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+
+/*========================================로그인 div*/
+/* 감싸는 div */
+
+/* 여기부터 로그인 css 시작 */
+#login{
+	position: absolute;
+	top:160px;
+	left:50%;
+	transform: translate(-50%);
+}
+
+.l_login_all{
+	margin:40px auto;
+	width: 1000px;
+	height: 600px;
+}
+.l_login_form {
+	margin:0 auto;
+	width: 500px;
+	height: 450px;
+	border: 2px solid #2a365c;
+}
+
+.l_login_title { 
+	text-align: center;
+	font-size: 30px;
+	height: 80px;
+	color: #2a365c;
+}
+#l_login_titlemsg{
+	padding: 10px 0;
+	color: #2a365c;
+}
+.l_login_inputId, .l_login_inputPwd, 
+.l_login_signin,.l_login_checkmsg, 
+.l_login_signup,.l_login_other, .l_login_otherfix{
+	margin-left:50px;
+	width:400px;
+	height:50px;
+	float: left;
+	margin-top: 5px;
+}
+.l_login_checkmsg{
+	text-align: center;
+	height:30px;
+	color: red;
+}
+/*========================================= 각각의 div안에 있는 실제 tag들의 설정*/
+#showMessage{
+	margin-top: 3px;
+}
+
+.l_collection_btn>div>input[type=text]{
+	width: 100%;
+	height: 100%;
+	border:none;
+	outline: none;
+	border: 1px solid #2a365c;
+	text-indent: 0.9em;
+	transition: 0.5s;
+}
+.l_collection_btn>div>input[type=password]{
+	width: 100%;
+	height: 100%;
+	border:none;
+	outline: none;
+	border: 1px solid #2a365c;
+	text-indent: 0.9em;
+	transition: 0.5s;
+}
+.l_collection_btn>div>input[type=submit]{
+	width: 100%;
+	height: 100%;
+	border:none;
+	outline: none;
+	color: white;
+	background-color: #2a365c;
+	text-indent: 0.9em;
+	transition: 0.5s;
+	
+}
+.l_collection_btn>div>input[type=button]{
+	width: 100%;
+	height: 100%;
+	border:none;
+	outline: none;
+	color: #2a365c;
+	border: 1px solid #2a365c;
+	background-color: white;
+	text-indent: 0.9em;
+	transition: 0.5s;
+}
+.l_login_other{
+	height: 30px;
+/* 	background-color: red; */
+}
+#l_collection_checkbox{
+	display: inline-block;
+	width: 190px;
+	height: 100%;
+	vertical-align: middle;
+/* 	background-color: black; */
+}
+#l_collection_find{
+	display:inline-block;
+/* 	background: yellowgreen; */
+}
+
+#l_collection_find a{
+	color: #2a365c;
+	font-size: 15px;
+	font-weight:bold;
+}
+
+#l_collection_find a:visited{
+	color: #2a365c;
+	font-weight:bold;
+}
+
+#l_collection_find a:hover{
+	background-color: #white;
+	opacity: 0.5;
+	border-radius: 3px;
+	color: #2a365c;
+}
+
+#l_collection_find a:active{
+	background-color: #2a365c;
+	opacity:1;
+	border-radius: 3px;
+	color: white;
+}
+
+/*============================================= 체크박스 START*/
+.checkbox{
+	display:inline-block;
+	width: 160px;
+	margin-left: 15px;
+	height: 100%;
+/* 	background-color: yellow; */
+}
+.checkbox input {
+	display: none;
+}
+
+.checkbox span {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.text{
+	width: 100px;
+	font-size: 15px;
+}
+.checkbox .icon {
+	position: relative;
+	width: 17px;
+	height: 17px;
+	border: 1px solid #c8ccd4;
+	border-radius: 3px;
+	transition: background 0.1s ease;
+}
+.checkbox .icon::after {
+ 	content:''; 
+	position: absolute;
+	top: 1px;
+	left: 5px;
+	width: 5px;
+	height: 11px;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	transform:rotate(45) scale(0);
+	transition: all 0.3s ease;
+	opacity: 1;
+}
+.checkbox .text {
+	margin-left: 5px;
+	width: 120px;
+	color: #2a365c;
+	font-weight: bold;
+}
+.checkbox input:checked ~ .icon {
+	border-color: transparent;
+	background: #2a365c;
+	animation: jelly 0.6s ease;
+}
+.checkbox input:checked ~ .icon::after {
+	opacity:1;
+	transform:rotate(45deg) scale(1);
+}
+
+@keyframes jelly{
+	from {transform: scale(1,1);}
+	30% {transform: scale(1.25,0.75);}
+	40% {transform: scale(0.75,1.25);}
+	50% {transform: scale(1.15,0.85);}
+	65% {transform: scale(0.95,1.05);}
+	75% {transform: scale(1.05,0.95);}
+	to {transform: scale(1,1);}
+}
+/*=============================================체크박스 END*/
+
+
+/* ==================================================================================================================== */
+															/*Login CSS End*/
+/* ==================================================================================================================== */

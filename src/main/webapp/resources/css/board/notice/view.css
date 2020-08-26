@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/*게시글 전체 div*/
+.view_section{
+    width: 1050px; 
+    margin: 0 auto; 
+    margin-bottom: 100px;
+}
+
+/*view 테이블*/
+.view_table{
+border-collapse: collapse; 
+width: 1050px;
+text-align: center;
+color: #4c4c4c;
+border-top: 3px solid #5f0080 ;
+text-align: left;
+}
+
+.view_table thead>tr{
+border-bottom: 1px solid #ddd;
+}
+
+td, th{
+padding-left: 20px;
+}
+
+.view_table tr{
+ height: 48px;
+}
+
+.view_th {
+	background-color:#f7f5f8;
+	width: 128px;
+}
+
+.last_tr{
+	border-top: 1px solid #5f0080 ; 
+	border-bottom: 3px solid #5f0080 ;
+}
+
+/* 목록&수정  버튼*/
+.btn{
+	width: 110px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #795b8f;
+    border: 1px solid #5f0080;
+    margin: 30px 5px 5px 0;
+    float: right;
+    color: white;
+}
+
+.view_table2{
+border-collapse: collapse; 
+width: 1050px;
+text-align: center;
+color: #4c4c4c;
+}
+
+/*이전글 & 다음글*/
+.movement_table{
+	
+}
+
+.movement_table td{
+	width: 70px;	
+	height:40px;
+}
+
+
+
+
+
+

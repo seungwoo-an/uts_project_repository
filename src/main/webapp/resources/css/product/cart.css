@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+#cart_div {
+	display: flex;
+	flex-direction: column;
+	align-items: center; width : 100%;
+	height: 100%;
+	width: 100%
+}
+
+#cart_table_div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1400px;
+	min-width: 1400px;
+	height: 100%;
+}
+
+#cart_div h1 {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-size: 40px;
+}
+
+#cart_div h5 {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+#outerTable {
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+}
+
+.innerTable {
+	width: 100%;
+	height: 100%;
+}
+
+#subTable{
+	margin-top: 50px;
+}
+
+#outerTable_first_tr{
+	height: 100px;
+	border-top: 4px solid #2a365c;
+	border-bottom: 2px solid #ddd;
+}
+.trForEachCompany{
+	height: 250px;
+}
+#outerTable_first_tr th:nth-child(1) {
+	width: 220px;
+}
+
+#outerTable tr:first-child th:nth-child(3) {
+	width: 200px;
+}
+
+#cart_div input[type=checkbox] {
+	width: 20px;
+	height: 20px;
+	background-color: #2a365c;
+}
+
+.innerTable img {
+	width: 200px;
+	height: 200px;
+}
+
+/* .innerTable tr:first-child { */
+/* 	height: 250px; */
+/* } */
+
+.innerTable tr:first-child th:first-child {
+	width: 80px;
+}
+
+#outerTable_first_tr label {
+	padding-right: 20px;
+}
+
+.innerTable tr:first-child td:nth-child(2) {
+	width: 250px;
+}
+
+.innerTable tr:first-child td:nth-child(3) {
+	width: 570px;
+}
+
+.innerTable tr:first-child td:nth-child(4) {
+	width: 300px;
+}
+
+#cart_div span , label{
+	font-size: 20px;
+}
+
+#del_tit{
+	letter-spacing: 12px;	
+}
+
+#cart_table_div input[type=button] {
+	width: 34px;
+	height: 34px;
+	color:#808080;
+	font-size: 25px;
+	float: left;
+	border: 2px solid #ddd;
+}
+
+#cart_table_div input[type=text] {
+	width: 80px;
+	height: 30px;
+	font-size: 20px;
+	text-align: center;
+	float: left;
+	border: none;
+	border-top: 2px solid #ddd;
+	border-bottom: 2px solid #ddd;
+}
+
+.innerTable tr:last-child {
+	height: 100px;
+	font-size: 20px;
+}
+
+.innerTable tr:last-child td>section{
+/* 	display:flex; */
+/* 	width: 100%; */
+/* 	justify-content: flex-end; */
+	border-bottom: 2px solid #ddd;
+}
+.innerTable tr:last-child td>section>section{
+	margin:0 60px 20px 80px;
+	background-color: #f5f5f5;
+	padding: 20px;
+/* 	width: 30%; */
+/* 	border-top: 2px solid #ddd; */
+}
+
+.innerTable tr:last-child td>section>section div:nth-child(1) {
+/* 	display: flex; */
+/* 	justify-content: center; */
+	margin-top: 5px;	
+}
+/* .innerTable tr:last-child td>section>section div:nth-child(2){ */
+/* 	margin: 20px; */
+/* } */
+
+#td_emptyList{
+	padding: 50px 0; 
+	border-bottom: 2px solid #ddd;
+}
+
+#div_btn{
+	margin: 0 0 50px 80px;
+}
+
+
+.cart_btn{
+	width: 150px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #2a365c;
+    border: 1px solid #5f0080;
+    color: #fff;
+    font-size: 15px;
+    margin: 20px 10px;
+    font-size: 13px;
+}
+
+#total_price_table{
+	background-color: #f5f5f5;
+	margin: 0 auto;
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+#total_price_table tr{
+	height: 35px;
+}
+
+#total_price_table td{
+	padding: 0 30px;
+}
+
+#total_price_table td:nth-child(1){
+	width: 150px;
+	font-weight: 600;
+}
+
+#total_price_table tr:nth-child(3){
+	border-top: 1px solid #2a365c ;
+}
+
+
+
+
+
+
+
+
+
+
+
+

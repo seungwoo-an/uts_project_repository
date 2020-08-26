@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="bcryptPasswordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+	<bean id="loginAuthenticationProvider" class="com.spring.project.login.auth.LoginAuthenticationProvider"/>
+	<bean id="loginFailHandler" class="com.spring.project.login.handler.LoginFailureHandler"/>
+	<bean id="loginSuccessHandler" class="com.spring.project.login.handler.LoginSuccessHandler"/>
+	
+	<security:http pattern="/resources/**" security="none"/>
+	<security:http>
+		<security:form-login login-page="/login" 
+			username-parameter="id" password-parameter="pw" 
+			login-processing-url="/loginProcess"
+			authentication-failure-handler-ref="loginFailHandler"
+			authentication-success-handler-ref="loginSuccessHandler"
+			/>
+		<security:logout logout-success-url="/"/>
+		<security:access-denied-handler error-page="/error/autherror" />
+		<security:csrf disabled="true"/>
+		<security:session-management>
+		<security:concurrency-control max-sessions="1" expired-url="/error/loginDuplicate"/>
+		</security:session-management>
+	</security:http> 
+		
+	<security:authentication-manager> 
+	<security:authentication-provider>
+		<security:user-service>
+			<security:user name="master" password="master" authorities="ROLE_MASTER"/>
+		</security:user-service>
+	</security:authentication-provider>
+	<security:authentication-provider ref="loginAuthenticationProvider" /> 
+	</security:authentication-manager>
+	
+		
+
+</beans>

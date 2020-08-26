@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/* 감싸는 div */
+
+
+.joinmain{
+	height: 100%;
+}
+.joinbox{
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 800px;
+	height: 900px;
+	border: 3px solid #2a365a;
+}
+.jointitle{
+	height: 70px;
+	color: #2a365c;
+}
+.jointitle>h1{
+	height: 55px;
+	text-align: center;
+	padding-top: 15px;
+}
+.joinidinfo{
+	margin: 0 auto;
+	width: 800px;
+	height: 830px;
+}
+.joinidinfo>div{
+	margin: 0 auto;
+	width: 600px;
+	height: 830px;
+}
+.joininfokey{
+	float: left;
+	margin-left: 80px; 
+	margin-top: 20px;
+	width: 320px;
+	height: 50px;
+}
+
+.joininfokey>input[type=text] {
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	border: 1px solid #2a365c;
+	text-indent: 0.9em;
+	transition: 0.5s;
+}
+.joininfokey>input[type=password] {
+	width: 100%;
+	height: 100%;
+	border:none;
+	outline: none;
+	border: 1px solid #2a365c;
+	text-indent: 0.9em;
+	transition: 0.5s;
+}
+.joininfovalue{
+	float: left;
+	margin-left: 30px;
+	margin-top: 20px;
+	width: 170px;
+	height: 50px;
+}
+.joininfovalue>font{
+	display: block;
+	font-size: 13px;
+	margin-top: 15px;
+	width: 100%;
+}
+.selectuser{
+	float: left;
+	margin-left: 230px; 
+	margin-top: 30px;
+ 	width: 200px;
+	height: 50px;
+}
+.selectuser>input[type=radio],.selectuser>label{
+	margin-left: 5px;
+}
+.selectuser>input[type=radio]:hover, .selectuser>label:hover{
+	cursor: pointer;
+}
+#signupbtn{
+	float: left;
+	width: 420px;
+	height: 50px;
+	margin-left: 90px;
+	color: white;
+	border: none;
+	background-color: #2a365c;
+}
+#signupbtn2{
+	float: left;
+	width: 420px;
+	height: 50px;
+	margin-top: 30px;
+	margin-left: 90px;
+	color: white;
+	border: none;
+	background-color: #2a365c;
+}
+#cancelbtn{
+	float: left;
+	width: 420px;
+	height: 50px;
+	margin-left: 90px; 
+	color: #2a365c;
+	margin-top: 10px;
+	border: 1px solid #2a365c;
+	background-color: white;
+}
+#findaddrbtn{
+	width: 100px;
+	height: 100%;
+	color: white;
+	border: none;
+	background-color: #2a365c;
+}
+#certifyemail{
+	width: 100px;
+	height: 100%;
+	color: #2a365c;
+	border: 2px solid #2a365c;
+	opacity:0.7;
+	background-color: white;
+}
+#findaddrbtn:hover, #signupbtn:hover, #cancelbtn:hover, #certifyemail:hover{
+	cursor: pointer;
+}
+.forSeller{
+	display: none;
+}
+#forseller2{
+	float: left;
+	margin-top: 30px;
+	display: block;
+	width: 270px;
+	height: 50px;
+	background-color: red;
+}
+.findseller{
+	float: left;
+	margin-top: 30px;
+	margin-left: 10px;
+ 	width: 60px;
+	height: 50px;
+	background-color: blue;
+	
+}
+.findseller>input[type=button]{
+	width: 100%;
+	height: 100%;
+	color: white;
+	border: none;
+	background-color: #2a365c;
+}
+.fsellertxt{
+	float: left;
+	height: 23px;
+	margin:10px 0 10px 200px;
+}
+#reg_num_check{
+	display: block;
+	font-size: 13px;
+	width: 100%;
+}
+
+#sellerbox{
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border: 1px solid #2a365c;
+	text-indent: 0.9em;
+	transition: 0.5s;
+}
+
+
+

@@ -1,0 +1,41 @@
+<jsp:include page="../header&footer/sidebar.jsp"></jsp:include>
+	<div id="main_menu">
+    <jsp:include page="../header&footer/header.jsp"></jsp:include>
+    <div id="????">
+    	여기에 넣고싶은 내용
+    </div>
+    </div>
+
+
+#????{
+	position:absolute;
+	width:????	원하는 크기
+	height:???? 원하는 크기
+	top: 150px;
+	left: 50%;
+	transform: translate(-50%);
+	background-color: #566089; 원하는 색
+}
+
+
+#main_menu{
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	transform: translate(-50%);
+	width: 1520px;
+	height: 1200px;
+	overflow: hidden;
+}
+
+/* 사이드바 바뀌는 속성 */
+#sidebar_icon {
+	position: fixed;
+	top: 40px;
+	right: 240px;
+	width: 30px;
+	height: 30px;
+	z-index: 2;
+	cursor: pointer;
+	display: block !important;
+}

@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/* table css */
+.review_write_table {
+	border-top: 3px solid #5f0080;
+	border-collapse: collapse;
+	width: 650px;
+}
+
+.review_write_table tr {
+	border-top: 2px solid #e8e8e8;
+}
+
+.review_write_table td, th {
+	padding: 15px;
+}
+
+.review_write_tlt {
+	font-size: 21px;
+}
+
+.inner_table {
+	border-collapse: collapse;
+	width: 100%;
+	/* background-color: #f3f5f7; */
+	border: none;
+}
+
+.sub_tlt {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+/*구매 상품 보여지는 div*/
+.div_tlt_pro_name {
+	font-size: 20px;
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+
+.div_tlt {
+	color: #8a8a8a;
+	margin-bottom: 3px;
+}
+
+/* 별점 css */
+#star_grade a {
+	text-decoration: none;
+	color: gray;
+	font-size: 30px;
+}
+
+#star_grade a.on {
+	color: #f7b904;
+}
+
+/* 구매후기 */
+.review_title {
+	width: 100%;
+	background-color: #f3f5f7;
+	border: none;
+	height: 30px;
+}
+
+input:focus {
+	outline: none;
+}
+
+#review_content {
+	width: 100%;
+	background-color: #f3f5f7;
+	border: none;
+}
+
+textarea:focus {
+	outline: none;
+}
+
+.textarea_tit {
+	margin-bottom: 20px;
+}
+
+/* 사진첨부 css */
+.wrpper_file {
+	background-image: url(http://e-riverstyle.com/demo/icon.png);
+	background-repeat: no-repeat;
+	background-size: 70px auto;
+	height: 70px;
+}
+
+input[type="file"] {
+	height: 100px;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+	width: 100px;
+	height: 100px;
+	opacity: 0;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+/* 취소/확인 버튼 css */
+.review_witre_btn {
+	text-align: center
+}
+
+.review_btn {
+	width: 88px;
+	height: 42px;
+	margin-right: 10px;
+	padding-bottom: 2px;
+	border: 1px solid #5f0080;
+	letter-spacing: -.3px;
+	text-align: center;
+	font-family: noto sans;
+	font-weight: 540;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.review_cancel_btn {
+	background-color: #fff;
+	color: #5f0080;
+}
+
+.review_upload_btn {
+	background-color: #5f0080;
+	color: #fff;
+}

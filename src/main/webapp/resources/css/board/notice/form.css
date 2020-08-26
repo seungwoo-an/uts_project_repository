@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.noice_section{
+	 width: 1050px; 
+	 margin: 0 auto; 
+}
+
+.form_table{
+	border-collapse: collapse; 
+	width: 1050px;
+}
+ 
+.form_table tr{
+	height: 48px;
+	border-bottom: 2px solid #e8e8e8;
+	padding: 0 10px; 
+}
+
+.form_table th{
+	background-color: #f7f5f8;
+	width: 130px;
+}
+
+.th_title {
+	width: 99.5%; 
+	height: 47px; 
+	border: none; 
+}
+
+.td_content{
+ border: none; 
+ margin: 10px;
+}
+
+/*글 제목 클릭 시 포커스 테두리 안생기게하는 css*/
+input,text:focus {
+        outline: none;
+   }
+  
+textarea:focus {
+        outline: none;
+   }
+   
+/*등록 & 취소 버튼 css*/
+.btn{
+	width: 150px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #795b8f;
+    border: 1px solid #5f0080;
+    color: #fff;
+    font-size: 15px;
+/*     float: right; */
+    margin: 20px 10px;
+    font-size: 13px;
+}
+
+
+
