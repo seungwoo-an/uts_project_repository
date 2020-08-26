@@ -13,11 +13,6 @@ import com.spring.project.board.model.QnAVO;
 @Repository
 public interface IQnARepository {
 	
-	//qna 전체 목록 출력
-	@Select("select * from(select rownum q_rn,n.* from (select * from q_n_a_board order by q_number desc) n) "
-			+ "where q_rn between #{0} and #{1}")
-	public List<QnAVO> getQnAList(int start, int end);
-	
 	//qna 수정
 	@Update("update Q_N_A_board set q_title=#{q_title},q_content=#{q_content} where member_id=#{member_id}")
 	public void updateQnA(String q_title, String q_content, String member_id);
@@ -41,5 +36,8 @@ public interface IQnARepository {
 
 	@Delete("delete q_n_a_board where member_id=#{member_id}")
 	public void deleteQnAByMemberId(String member_id);
+	@Select("select * from(select rownum q_rn,n.* from (select * from q_n_a_board where product_id=#{0} order by q_number desc) n) "
+			+ "where q_rn between #{1} and #{2}")
+	public List<QnAVO> getQnAList(int product_id, int start, int end);
 	
 }

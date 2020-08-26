@@ -48,7 +48,6 @@
 		</table>
 	</form>
 </div>
-<jsp:include page="../../header&footer/footer.jsp"/>
 <script type="text/javascript">
 $("#qnaInsertBtn").on("click",function(){
 	let q_title = $("input[name=q_title]").val();

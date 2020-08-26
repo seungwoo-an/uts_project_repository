@@ -192,6 +192,11 @@
 	         				<th>작성일</th>
 	         				<th>조회</th>
 	         			</tr>
+	         			<c:if test="${empty reviewList}">
+	         				<tr>
+	         					<td colspan="6" style="text-align:center;">등록된 상품 후기가 없습니다.</td>
+	         				</tr>
+	         			</c:if>
 			         	<tbody id="tbody">
 				         	<c:forEach var="review" items="${reviewList}">
 				         		<tr>
@@ -267,12 +272,7 @@
 			   </ul>
 			   <ul class="panel" id=product_Q_N_A>
 			         <li>
-			         	<div id=qna_title>
-				         	<h3>PRODUCT Q&A</h3>
-			         	</div>
-						<div id=insert_qna>
-	         				<input type="button" onclick="qnaPop()" value="상품문의">
-						</div>
+			         	<div class=sub_title>▶ 상품 문의</div>
 						<table>
 		         			<tr>
 		         				<th>번호</th>
@@ -281,6 +281,11 @@
 		         				<th>작성자</th>
 		         				<th>작성일</th>
 		         			</tr>
+		         			<c:if test="${empty qnaList}">
+	         				<tr>
+	         					<td colspan="6">등록된 상품 문의가 없습니다.</td>
+	         				</tr>
+	         				</c:if>
 			         		<c:forEach var="qna" items="${qnaList}">
 			         		<tr>
 								<td>${qna.q_rn}</td>
@@ -312,6 +317,9 @@
 				         		</td>
 				         	</tr>
 		         		</table>
+		         		<div id=insert_qna>
+	         				<input type="button" onclick="qnaPop()" value="상품문의">
+						</div>
 		         		<div id=qna_desc>
 		         			상품에 대한 문의를 남기는 공간입니다.<br>
 		         			 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.<br>

@@ -15,11 +15,6 @@ public class QnAService{
 	@Autowired
 	IQnARepository qnARepository;
 	
-	public List<QnAVO> getQnAList(int page){
-		int end = page*10;
-		int start = end-9;
-		return qnARepository.getQnAList(start, end);
-	}
 	@Transactional(value = "tsManager")
 	public void updateQnA(String q_title, String q_content, String member_id) {
 		qnARepository.updateQnA(q_title, q_content, member_id);
@@ -41,5 +36,10 @@ public class QnAService{
 	public void insertQnA(QnAVO qna) {
 		qna.setQ_number(qnARepository.getMaxQnaNumber()+1);
 		qnARepository.insertQnA(qna);
+	}
+	public List<QnAVO> getQnAList(int product_id, int page) {
+		int end = page*10;
+		int start = end-9;
+		return qnARepository.getQnAList(product_id,start, end);
 	}
 }

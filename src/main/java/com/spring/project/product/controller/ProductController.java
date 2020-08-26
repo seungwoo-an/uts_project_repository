@@ -152,7 +152,7 @@ public class ProductController {
 		model.addAttribute("sellerInfo", memberService.getSellerInfo(product.getMember_id()));
 		model.addAttribute("reviewList", reviewService.getReviewList(product_id, rPage));
 		model.addAttribute("reviewPagingManager", new PagingManager(reviewService.getTotalCount(product_id), rPage));
-		model.addAttribute("qnaList", qnaService.getQnAList(qPage));
+		model.addAttribute("qnaList", qnaService.getQnAList(product_id,qPage));
 		model.addAttribute("qnaPagingManager", new PagingManager(qnaService.getTotalCount(product_id), qPage));
 		return "product/view";
 	}
